@@ -2,13 +2,12 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="numpy._core.getlimits")
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 from sklearn.datasets import load_diabetes
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
-
-import matplotlib.pyplot as plt
 
 
 # Load the diabetes dataset
@@ -53,8 +52,8 @@ plt.grid(True) # Add grid for better readability
 plt.show()
 
 # Save as PNG
-plt.savefig("diabetes_prediction.png")
-print("Plot saved as diabetes_prediction.png")
+plt.savefig("predicting-diabetes.png")
+print("Plot saved as predicting-diabetes.png")
 
 # Save the model
 import joblib
