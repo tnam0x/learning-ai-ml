@@ -47,7 +47,7 @@ def plot_histogram(data: np.ndarray, bins: int = 10):
 # x and y must be 1D arrays
 def plot_scatter(x: np.ndarray, y: np.ndarray):
     plt.figure(figsize=(8, 4))
-    plt.scatter(x, y, color='red')
+    plt.scatter(x, y, color='red', ec='k') # ec: edge color
     plt.title('Scatter Plot')
     plt.xlabel('X-axis')
     plt.ylabel('Y-axis')
